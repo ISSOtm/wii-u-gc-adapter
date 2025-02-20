@@ -1,0 +1,7 @@
+[Unit]
+Description=Wii U GameCube adapter daemon
+
+[Service]
+Type=exec
+ExecStartPre=modprobe uinput
+ExecStart=wii-u-gc-adapter
